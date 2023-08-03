@@ -1,0 +1,296 @@
+/* Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-size:1.6rem;
+}
+html{
+    user-select: none;
+    font-size: 62.5%;
+}
+seletor {
+    cursor: pointer;
+}  
+body{
+    font-family: "fillip", sans-serif;
+
+    display: flex; 
+    justify-content: center;
+
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+.warnError{
+    display: inline-flex;
+    align-items: center;
+
+    max-width: 300px;
+    border-radius: 12px;
+    margin-top: 8px;
+    padding: 4px 24px 4px 12px;
+
+    font-size: 1.8rem;
+    
+    color: white;
+    background-color: #ff4b4b;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    z-index: 2;
+
+}
+.warnError p{
+    display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+    margin: 0px 0px 0px 6px;
+}
+.iconError{
+    display: flex;
+    align-items: center;
+    padding-right: 28px;
+}
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 200,
+  'opsz' 20
+}
+b{
+    font-weight: 500;
+    font-style: normal;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 30px;
+
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+
+    min-width: 350px;
+    max-width: 450px;
+
+    padding: 20px;
+    /* border: 1px solid; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    letter-spacing: -0.5;
+    line-height: 1.3;
+
+    color: #535353;
+    margin: 0;
+    margin-bottom: 29px;
+
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.1rem;
+}
+.questions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 21px 9px 12px;
+    margin-bottom: 12px ;
+
+    border-radius: 100px;
+    background-color: white;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+
+    transition: transform 0.2s ease;
+}
+label:hover, #submit-button:hover, #start:hover{
+    outline: 1.5px solid #CCCC;
+    transform: translateY(-2px);
+
+    cursor: pointer;
+}
+.radio-description{
+    display: flex;
+
+    padding-left: 9px;
+    height: 14px;
+}
+.radio-description p{
+    display: block;
+    
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    height: 14px;
+
+    color: #504B49;
+
+    font-weight: lighter;
+    font-size: 1.8rem; 
+}
+
+#start{
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+#submit-button, button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 350px;
+    margin-top: 21px;
+    padding: 8px 60px;
+
+    border-radius: 25px;
+    border: 0;
+
+    background-color: #0166EE;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+
+    transition: transform 0.2s ease;
+}
+.textButton{
+    height: 100%;
+}
+#submit-button:focus, button:focus {
+  outline: none;
+}
+#submit-button p, button p{
+    display: flex;
+    margin: 0;
+    height: 17px;
+    
+    font-family: "fillip", sans-serif;
+    font-size: 1.8rem;
+
+    line-height: 17px;
+    color: white;
+
+    letter-spacing: -0.5px;
+}
+#personality{
+    font-weight: 500;
+    font-style: normal;
+    color: #0166EE;
+}
+#option-1:checked ~ .label-option-1,
+#option-2:checked ~ .label-option-2,
+#option-3:checked ~ .label-option-3,
+#option-4:checked ~ .label-option-4,
+#option-5:checked ~ .label-option-5,
+#option-6:checked ~ .label-option-6,
+#option-7:checked ~ .label-option-7{  
+    outline: 2px solid #0166EE;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+}
+#option-1:checked ~ .label-option-1 .radio-description,
+#option-2:checked ~ .label-option-2 .radio-description,
+#option-3:checked ~ .label-option-3 .radio-description,
+#option-4:checked ~ .label-option-4 .radio-description,
+#option-5:checked ~ .label-option-5 .radio-description,
+#option-6:checked ~ .label-option-6 .radio-description,
+#option-7:checked ~ .label-option-7 .radio-description{
+    color: #504B49;
+}
+.icon{
+    height: 24px;
+    width: 24px;
+    
+    background: #CCCCCC;
+    border-radius: 50%;
+
+    position: relative;
+}
+#option-1:checked ~ .label-option-1 .icon,
+#option-2:checked ~ .label-option-2 .icon,
+#option-3:checked ~ .label-option-3 .icon,
+#option-4:checked ~ .label-option-4 .icon,
+#option-5:checked ~ .label-option-5 .icon,
+#option-6:checked ~ .label-option-6 .icon,
+#option-7:checked ~ .label-option-7 .icon{
+    background-color: #fff;
+}
+.icon::before{
+    background-position: center;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.material-symbols-outlined{
+    position: absolute;
+    color: white;
+    z-index: 3;
+}
+#option-1:checked ~ .label-option-1 .icon::before,
+#option-2:checked ~ .label-option-2 .icon::before,
+#option-3:checked ~ .label-option-3 .icon::before,
+#option-4:checked ~ .label-option-4 .icon::before,
+#option-5:checked ~ .label-option-5 .icon::before,
+#option-6:checked ~ .label-option-6 .icon::before,
+#option-7:checked ~ .label-option-7 .icon::before{
+    z-index: 1;
+    background: #4470C9;
+    transform: translate(-50%, -50%) scale(1);
+}
+input[type="radio"]{
+    display: none;
+}
+/* ------> Animations */
+.fade-in{
+    animation: fadeIn2s 1.5s;
+}
+.fade-out{
+    animation: fadeOut2s 1.5s;
+}
+@keyframes fadeIn2s{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeOut2s{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.fade-in-04s{
+    animation: fadeIn04s 0.4s;
+}
+.fade-out-04s{
+    animation: fadeOut04s 0.4s;
+}
+@keyframes fadeIn04s{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeOut04s{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}

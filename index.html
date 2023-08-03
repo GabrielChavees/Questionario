@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <title>BigFive Questionário</title>
+
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="theme-color" content="#F2F2F2">
+    <link rel="stylesheet" href="https://use.typekit.net/tbl7dsn.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WMB65TW');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMB65TW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="warnError">
+        <div class="iconError"><span class="material-symbols-outlined">error</span></div><p>Opa, escolha uma opção...</p>
+    </div>
+    <div class="content">
+        <!-- Quizz de Perguntas -->
+        <form class="quiz">
+            <!-- Introdução -->
+            <div class="questions" data-step="1">
+                <h1>Olá! </h1>
+            </div>
+            <div class="questions" data-step="2">
+                <h1>Bem-vindo ao questionário BigFive <br> <b>exclusivo para membros!</b></h1>
+            </div>
+            <div class="questions" data-step="3">
+                <h1><b>Você vai sair daqui sabendo a personalidade do seu cão!</b> <br><br> O questionário é composto por 75 perguntas, em cada pergunta, avalie o comportamento do seu cão em uma escala de 1 a 7, onde 1 signica “Discordo fortemente” e 7 signica “Concordo fortemente”</h1>
+                <button id="start" class="textButton"><p>Começar</p></button>
+            </div>
+
+            <!-- LISTAS DE PERGUNTAS -->
+            <!-- Pergunta 4 -->
+            <div class="questions" data-step="4">
+                <h1>Meu cão geralmente se mostra animado ao encontrar novas pessoas...</h1>
+            </div>
+            <!-- Pergunta 5 -->
+            <div class="questions" data-step="5">
+                <h1>Meu cão gosta de brincar com outros cães em parques e áreas de lazer...</h1>
+            </div>
+            <!-- Pergunta 6 -->
+            <div class="questions" data-step="6">
+                <h1>Meu cão tende a ser o líder quando está com outros cães...</h1>
+            </div>
+            <!-- Pergunta 7 -->
+            <div class="questions" data-step="7">
+                <h1>Meu cão busca ativamente interações com pessoas e outros animais...</h1>
+            </div>
+            <!-- Pergunta 8 -->
+            <div class="questions" data-step="8">
+                <h1>Meu cão é geralmente sociável e gosta de interagir com pessoas e outros animais...</h1>
+            </div>
+            <!-- Pergunta 9 -->
+            <div class="questions" data-step="9">
+                <h1>Meu cão frequentemente é o centro das atenções em eventos e reuniões...</h1>
+            </div>
+            <!-- Pergunta 10 -->
+            <div class="questions" data-step="10">
+                <h1>Meu cão se aproxima de pessoas desconhecidas de forma amigável e curiosa...</h1>
+            </div>
+            <!-- Pergunta 11 -->
+            <div class="questions" data-step="11">
+                <h1>Meu cão tende a ser vocal e comunicativo em situações sociais...</h1>
+            </div>
+            <!-- Pergunta 12 -->
+            <div class="questions" data-step="12">
+                <h1>Meu cão gosta de participar de atividades e jogos com outros cães e pessoas...</h1>
+            </div>
+            <!-- Pergunta 13 -->
+            <div class="questions" data-step="13">
+                <h1>Meu cão se adapta facilmente a novos ambientes e situações sociais...</h1>
+            </div>
+            <!-- Pergunta 14 -->
+            <div class="questions" data-step="14">
+                <h1>Meu cão demonstra entusiasmo ao ser apresentado a novos brinquedos e atividades...</h1>
+            </div>
+            <!-- Pergunta 15 -->
+            <div class="questions" data-step="15">
+                <h1>Meu cão é receptivo e amigável com pessoas desconhecidas...</h1>
+            </div>
+            <!-- Pergunta 16 -->
+            <div class="questions" data-step="16">
+                <h1>Meu cão tende a fazer amizade facilmente com outros cães durante os passeios...</h1>
+            </div>
+            <!-- Pergunta 17 -->
+            <div class="questions" data-step="17">
+                <h1>Meu cão parece confortável e relaxado em ambientes movimentados...</h1>
+            </div>
+            <!-- Pergunta 18 -->
+            <div class="questions" data-step="18">
+                <h1>Meu cão geralmente se mostra interessado em explorar novos ambientes com outros cães ou pessoas...</h1>
+            </div>
+            <!-- Pergunta 19 -->
+            <div class="questions" data-step="19">
+                <h1>Meu cão é geralmente cooperativo e disposto a agradar...</h1>
+            </div>
+            <!-- Pergunta 20 -->
+            <div class="questions" data-step="20">
+                <h1>Meu cão se mostra compreensivo e paciente com crianças e idosos...</h1>
+            </div>
+            <!-- Pergunta 21 -->
+            <div class="questions" data-step="21">
+                <h1>Meu cão tende a ser gentil e tolerante com outros animais de estimação em casa...</h1>
+            </div>
+            <!-- Pergunta 22 -->
+            <div class="questions" data-step="22">
+                <h1>Meu cão frequentemente oferece conforto e apoio emocional quando percebe que estou chateado...</h1>
+            </div>
+            <!-- Pergunta 23 -->
+            <div class="questions" data-step="23">
+                <h1>Meu cão parece estar sempre disposto a compartilhar brinquedos e recursos com outros cães...</h1>
+            </div>
+            <!-- Pergunta 24 -->
+            <div class="questions" data-step="24">
+                <h1>Meu cão é cuidadoso e atencioso ao interagir com pessoas e outros animais...</h1>
+            </div>
+            <!-- Pergunta 25 -->
+            <div class="questions" data-step="25">
+                <h1>Meu cão respeita os limites e sinais de outros cães durante as brincadeiras...</h1>
+            </div>
+            <!-- Pergunta 26 -->
+            <div class="questions" data-step="26">
+                <h1>Meu cão costuma ser leal e protetor em relação aos membros da família...</h1>
+            </div>
+            <!-- Pergunta 27 -->
+            <div class="questions" data-step="27">
+                <h1>Meu cão demonstra paciência e autocontrole em situações desaadoras...</h1>
+            </div>
+            <!-- Pergunta 28 -->
+            <div class="questions" data-step="28">
+                <h1>Meu cão parece ser capaz de se adaptar às necessidades e preferências dos outros...</h1>
+            </div>
+            <!-- Pergunta 29 -->
+            <div class="questions" data-step="29">
+                <h1>Meu cão se comporta de forma amigável e não ameaçadora com estranhos...</h1>
+            </div>
+            <!-- Pergunta 30 -->
+            <div class="questions" data-step="30">
+                <h1>Meu cão costuma seguir comandos e instruções de forma conável e consistente...</h1>
+            </div>
+            <!-- Pergunta 31 -->
+            <div class="questions" data-step="31">
+                <h1>Meu cão responde positivamente a gestos de carinho e afeto dos membros da família...</h1>
+            </div>
+            <!-- Pergunta 32 -->
+            <div class="questions" data-step="32">
+                <h1>Meu cão demonstra empatia e sensibilidade às emoções e necessidades dos outros...</h1>
+            </div>
+            <!-- Pergunta 33 -->
+            <div class="questions" data-step="33">
+                <h1>Meu cão é geralmente fácil de lidar e não demonstra comportamentos agressivos...</h1>
+            </div>
+            <!-- Pergunta 34 -->
+            <div class="questions" data-step="34">
+                <h1>Meu cão demonstra empatia e sensibilidade às emoções enecessidades dos outros...</h1>
+            </div>
+            <!-- Pergunta 35 -->
+            <div class="questions" data-step="35">
+                <h1>Meu cão é geralmente fácil de lidar e não demonstra comportamentos agressivos...</h1>
+            </div>
+            <!-- Pergunta 36 -->
+            <div class="questions" data-step="36">
+                <h1>Meu cão tende a car ansioso ou estressado em situações desconhecidas...</h1>
+            </div>
+            <!-- Pergunta 37 -->
+            <div class="questions" data-step="37">
+                <h1>Meu cão demonstra comportamentos de medo ou insegurança diante de novas pessoas ou animais...</h1>
+            </div>
+            <!-- Pergunta 38 -->
+            <div class="questions" data-step="38">
+                <h1>Meu cão costuma se assustar com barulhos altos, como trovões ou fogos de artifício...</h1>
+            </div>
+            <!-- Pergunta 39 -->
+            <div class="questions" data-step="39">
+                <h1>Meu cão tende a ser cauteloso ou hesitante ao se aproximar de objetos desconhecidos...</h1>
+            </div>
+            <!-- Pergunta 40 -->
+            <div class="questions" data-step="40">
+                <h1>Meu cão apresenta sinais de estresse, como lamber os lábios ou tremer, em ambientes desconhecidos...</h1>
+            </div>
+            <!-- Pergunta 41 -->
+            <div class="questions" data-step="41">
+                <h1>Meu cão frequentemente busca conforto e segurança junto a mim quando está inseguro...</h1>
+            </div>
+            <!-- Pergunta 42 -->
+            <div class="questions" data-step="42">
+                <h1>Meu cão pode ser sensível ou reativo a mudanças na rotina diária...</h1>
+            </div>
+            <!-- Pergunta 43 -->
+            <div class="questions" data-step="43">
+                <h1>Meu cão parece ter diculdade em se acalmar após uma experiência estressante...</h1>
+            </div>
+            <!-- Pergunta 44 -->
+            <div class="questions" data-step="44">
+                <h1>Meu cão tende a car inquieto ou agitado em situações desconhecidas...</h1>
+            </div>
+            <!-- Pergunta 45 -->
+            <div class="questions" data-step="45">
+                <h1>Meu cão pode ser possessivo ou protetor em excesso com seus recursos (comida, brinquedos, espaço)...</h1>
+            </div>
+            <!-- Pergunta 46 -->
+            <div class="questions" data-step="46">
+                <h1>Meu cão demonstra comportamentos compulsivos ou repetitivos quando está ansioso...</h1>
+            </div>
+            <!-- Pergunta 47 -->
+            <div class="questions" data-step="47">
+                <h1>Meu cão tem diculdade em se concentrar ou prestar atenção quando está estressado...</h1>
+            </div>
+            <!-- Pergunta 48 -->
+            <div class="questions" data-step="48">
+                <h1>Meu cão tende a evitar situações ou estímulos que lhe causam desconforto ou medo...</h1>
+            </div>
+            <!-- Pergunta 49 -->
+            <div class="questions" data-step="49">
+                <h1>Meu cão pode se tornar vocal (latir, uivar, choramingar) em situações estressantes ou desconhecidas...</h1>
+            </div>
+            <!-- Pergunta 50 -->
+            <div class="questions" data-step="50">
+                <h1>Meu cão mostra sinais de desconforto ou medo durante viagens de carro ou visitas ao veterinário...</h1>
+            </div>
+            <!-- Pergunta 51 -->
+            <div class="questions" data-step="51">
+                <h1>Meu cão é geralmente curioso e interessado em explorar novos ambientes...</h1>
+            </div>
+            <!-- Pergunta 52 -->
+            <div class="questions" data-step="52">
+                <h1>Meu cão se adapta rapidamente a novas situações e experiências...</h1>
+            </div>
+            <!-- Pergunta 53 -->
+            <div class="questions" data-step="53">
+                <h1>Meu cão gosta de experimentar diferentes tipos de brinquedos e jogos...</h1>
+            </div>
+            <!-- Pergunta 54 -->
+            <div class="questions" data-step="54">
+                <h1>Meu cão parece interessado em aprender novos truques e comandos...</h1>
+            </div>
+            <!-- Pergunta 55 -->
+            <div class="questions" data-step="55">
+                <h1>Meu cão é receptivo a diferentes tipos de estímulos sensoriais, como texturas e odores...</h1>
+            </div>
+            <!-- Pergunta 56-->
+            <div class="questions" data-step="56">
+                <h1>Meu cão costuma se envolver em atividades criativas e imaginativas durante as brincadeiras...</h1>
+            </div>
+            <!-- Pergunta 57 -->
+            <div class="questions" data-step="57">
+                <h1>Meu cão é capaz de lidar com mudanças na rotina sem mostrar sinais de estresse...</h1>
+            </div>
+            <!-- Pergunta 58 -->
+            <div class="questions" data-step="58">
+                <h1>Meu cão demonstra interesse em interagir com diferentes espécies de animais...</h1>
+            </div>
+            <!-- Pergunta 59 -->
+            <div class="questions" data-step="59">
+                <h1>Meu cão parece apreciar a variedade e a novidade em sua alimentação e rotina diária...</h1>
+            </div>
+            <!-- Pergunta 60 -->
+            <div class="questions" data-step="60">
+                <h1>Meu cão está disposto a explorar novas áreas e caminhos durante os passeios...</h1>
+            </div>
+            <!-- Pergunta 61 -->
+            <div class="questions" data-step="61">
+                <h1>Meu cão se mostra interessado e engajado ao assistir programas de TV ou vídeos...</h1>
+            </div>
+            <!-- Pergunta 62 -->
+            <div class="questions" data-step="62">
+                <h1>Meu cão responde positivamente a diferentes estilos e técnicas de treinamento...</h1>
+            </div>
+            <!-- Pergunta 63 -->
+            <div class="questions" data-step="63">
+                <h1>Meu cão gosta de enfrentar desaos mentais, como quebracabeças e jogos interativos...</h1>
+            </div>
+            <!-- Pergunta 64 -->
+            <div class="questions" data-step="64">
+                <h1>Meu cão parece apreciar a exposição a diferentes ambientes e experiências culturais...</h1>
+            </div>
+            <!-- Pergunta 65 -->
+            <div class="questions" data-step="65">
+                <h1>Meu cão é capaz de se adaptar a diferentes estilos de comunicação e interação social...</h1>
+            </div>
+            <!-- Pergunta 66 -->
+            <div class="questions" data-step="66">
+                <h1>Meu cão é consistente e conável ao seguir comandos e instruções...</h1>
+            </div>
+            <!-- Pergunta 67 -->
+            <div class="questions" data-step="67">
+                <h1>Meu cão demonstra autocontrole ao lidar com tentações e distrações...</h1>
+            </div>
+            <!-- Pergunta 68 -->
+            <div class="questions" data-step="68">
+                <h1>Meu cão responde de forma rápida e eciente aos sinais e comandos de treinamento...</h1>
+            </div>
+            <!-- Pergunta 69 -->
+            <div class="questions" data-step="69">
+                <h1>Meu cão é capaz de manter a concentração durante as sessões de treinamento...</h1>
+            </div>
+            <!-- Pergunta 70 -->
+            <div class="questions" data-step="70">
+                <h1>Meu cão demonstra paciência e persistência ao aprender novas habilidades...</h1>
+            </div>
+            <!-- Pergunta 71 -->
+            <div class="questions" data-step="71">
+                <h1>Meu cão tende a ser organizado e metódico em suas atividades diárias...</h1>
+            </div>
+            <!-- Pergunta 72 -->
+            <div class="questions" data-step="72">
+                <h1>Meu cão é capaz de se adaptar a diferentes regras e expectativas em diferentes contextos...</h1>
+            </div>
+            <!-- Pergunta 73 -->
+            <div class="questions" data-step="73">
+                <h1>Meu cão demonstra responsabilidade e cuidado com seus brinquedos e pertences...</h1>
+            </div>
+            <!-- Pergunta 74 -->
+            <div class="questions" data-step="74">
+                <h1>Meu cão é geralmente pontual e regular em suas rotinas diárias, como alimentação e passeios...</h1>
+            </div>
+            <!-- Pergunta 75 -->
+            <div class="questions" data-step="75">
+                <h1>Meu cão tem um bom controle de suas necessidades siológicas e respeita os locais adequados para isso...</h1>
+            </div>
+            <!-- Pergunta 76 -->
+            <div class="questions" data-step="76">
+                <h1>Meu cão costuma ser limpo e higiênico em seu comportamento e ambiente...</h1>
+            </div>
+            <!-- Pergunta 77 -->
+            <div class="questions" data-step="77">
+                <h1>Meu cão mostra respeito pelos limites físicos e emocionais dos outros...</h1>
+            </div>
+            <!-- Pergunta 78 -->
+            <div class="questions" data-step="78">
+                <h1>Meu cão tem facilidade para aprender com os erros e melhorar seu comportamento...</h1>
+            </div>
+            <!-- Pergunta 79 -->
+            <div class="questions" data-step="79">
+                <h1 id="loading"></h1>
+            </div>
+            <!-- Pergunta 80 -->
+            <div class="questions" data-step="80">
+                <h1>A personalidade do seu cachorro é <span id="personality"></span></h1>
+            </div>
+            <!-- Botões -->
+            <div class="box">
+                <input type="radio" name="select" id="option-7" value="7">
+                <input type="radio" name="select" id="option-6" value="6">
+                <input type="radio" name="select" id="option-5" value="5">
+                <input type="radio" name="select" id="option-4" value="4">
+                <input type="radio" name="select" id="option-3" value="3">
+                <input type="radio" name="select" id="option-2" value="2">
+                <input type="radio" name="select" id="option-1" value="1">
+    
+                <label for="option-7" class="label-option-7">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </div>
+                    <div class="radio-description"><p>Concordo Fortemente</p></div>
+                </label>
+    
+                <label for="option-6" class="label-option-6">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </div>
+                    <div class="radio-description"><p>Concordo Moderadamente</p></div>
+                </label>
+    
+                <label for="option-5" class="label-option-5">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </div>
+                    <div class="radio-description"><p>Concordo Ligeiramente</p></div>
+                </label>
+
+                <label for="option-4" class="label-option-4">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </div>
+                    <div class="radio-description"><p>Neutro</p></div>
+                </label>
+    
+                <label for="option-3" class="label-option-3">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </div>
+                    <div class="radio-description"><p>Discordo Ligeiramente</p></div>
+                </label>
+                
+                <label for="option-2" class="label-option-2">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </div>
+                    <div class="radio-description"><p>Discordo Moderadamente</p></div>
+                </label>
+    
+                <label for="option-1" class="label-option-1">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </div>
+                    <div class="radio-description"><p>Discordo Fortemente</p></div>
+                </label>
+                <button type="submit" id="submit-button"><p class="textButton">Próximo</p></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
